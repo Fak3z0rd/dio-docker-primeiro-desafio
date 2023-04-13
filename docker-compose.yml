@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  apache2:
+    container_name: my-apache-app
+    image: httpd:latest
+    ports:
+      - '80:80'
+    volumes:
+      - ./calculator:/usr/local/apache2/htdocs
+    
